@@ -55,6 +55,7 @@ RUN apt-get update &&  apt update --fix-missing && apt upgrade -f -y && apt-get 
 #        php-mbstring \
 #        php-sqlite3 \
     xvfb \
+    pip \
     unzip \
 #        x11vnc && \   
  && apt-get clean \ 
