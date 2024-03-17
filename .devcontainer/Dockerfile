@@ -162,7 +162,10 @@ RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
 RUN touch instala-config-ed.sh && \
     curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
     chmod +x instala-config-ed.sh && \
-    ./instala-config-ed.sh
+    ./instala-config-ed.sh && \
+    touch config_bash_oh_my_posh.sh && \
+    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
+    chmod +x config_bash_oh_my_posh.sh
 
 # Set user
 USER ubuntu
