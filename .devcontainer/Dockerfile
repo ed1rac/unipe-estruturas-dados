@@ -168,4 +168,8 @@ RUN touch instala-config-ed.sh && \
     chmod +x config_bash_oh_my_posh.sh
 
 # Set user
-USER ubuntu
+# Adiciona o usuário 'unipe'
+RUN useradd -m unipe
+# Define a senha do usuário 'unipe' como 'unipe'
+RUN echo "unipe:unipe" | chpasswd
+USER unipe
