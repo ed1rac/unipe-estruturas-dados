@@ -5,7 +5,10 @@
 #FROM cs50/codespace:00ae65f484da2691d86ddb8e6bb3b844cbb4686d as builder
 # Criado e alterado por Edkallenn Lima em 15/03/2024. Se for alterar use sempre o idioma inglês para os comentários, exceto este.
 
-ARG base_tag=bullseye
+# Debian 11 baseado na imagem: mcr.microsoft.com/devcontainers/cpp:debian-11 (or bullseye)
+# Link para outros containers de desenvolvimento: https://hub.docker.com/_/microsoft-devcontainers-cpp
+# se precisar atualizar basta verificar no link acima qual o mais atual (latest) e trocar no ARG abaixo
+ARG base_tag=bullseye 
 ARG base_img=mcr.microsoft.com/vscode/devcontainers/base:dev-${base_tag}
 
 FROM --platform=linux/amd64 ${base_img} AS builder-install
