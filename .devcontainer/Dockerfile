@@ -45,7 +45,18 @@ RUN apt-get update &&  apt update --fix-missing && apt upgrade -f -y && apt-get 
     cowsay \
     graphviz \
     libboost-dev \
-    libboost-regex-dev \   
+    libboost-regex-dev \
+    acl \
+#        dwarfdump \
+    jq \
+    openbox \
+#        mysql-client \
+#        php-cli \
+#        php-mbstring \
+#        php-sqlite3 \
+    xvfb \
+    unzip \
+#        x11vnc && \   
  && apt-get clean \ 
  && rm -rf /var/lib/apt/lists/* 
 
@@ -103,26 +114,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Set virtual display
 ENV DISPLAY=":0"
 
-
-# Install Ubuntu packages
-# Install acl for temporarily removing ACLs via opt/cs50/bin/postCreateCommand
-# https://github.community/t/bug-umask-does-not-seem-to-be-respected/129638/9
-RUN apt update && \
-    apt install --no-install-recommends --no-install-suggests --yes \
-        acl \
-#        dwarfdump \
-        jq \
-        openbox \
-#        mysql-client \
-#        php-cli \
-#        php-mbstring \
-#        php-sqlite3 \
-        xvfb \
-        unzip \
-#        x11vnc && \
-    apt clean
-
-
 # Install Python packages
 RUN pip3 install --no-cache-dir \
         black \
@@ -132,7 +123,6 @@ RUN pip3 install --no-cache-dir \
         "pydantic<2" \
         pytz \
         setuptools
-
 
 # Copy files to image
 #COPY ./etc /etc
