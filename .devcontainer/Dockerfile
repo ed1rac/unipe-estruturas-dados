@@ -186,7 +186,7 @@ RUN echo "unipe:unipe" | chpasswd
 
 RUN mv /instala-config-ed.sh /home/vscode
 RUN cd /home/vscode
-RUN ./instala-config-ed.sh
+RUN bash /home/vscode/instala-config-ed.sh
 RUN cp /home/vscode/.bashrc /home/unipe -r -f -v
 
 USER vscode
