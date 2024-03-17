@@ -1,5 +1,5 @@
 {            
-                "editor.fontFamily": "'Ubuntu Mono', CascadiaCode, 'Cascadia Code', Consolas, 'Courier New', monospace",
+                "editor.fontFamily": "CaskaydiaCove, 'Ubuntu Mono', CascadiaCode, 'Cascadia Code', Consolas, 'Courier New', monospace",
                 "C_Cpp.updateChannel": "Insiders",
                 "workbench.colorTheme": "Dracula",
                 "latex-workshop.message.update.show": false,
@@ -59,7 +59,7 @@
                     "[php]": {
                         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
                     },
-                    "terminal.integrated.fontFamily": "'Ubuntu Mono', 'DroidSansMono NF', 'Cascadia Code'",
+                    "terminal.integrated.fontFamily": "CaskaydiaCove,'Ubuntu Mono', 'DroidSansM', CascadiaCode, 'Cascadia Code'",
                     "[dockercompose]": {
                         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
                     },
