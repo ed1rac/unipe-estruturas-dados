@@ -44,7 +44,7 @@ Para executar o aequivo, no terminal faça:
 
 | Ação | Tecla |
 | --- | --- |
-| Compilar e executar | CF6 |
+| Compilar e executar | F6 |
 | Compilar sem executar | Ctrl-Shift-B |
 | Depurar | F5 |
 | Indentar automaticamente | Ctrl-Shift-I |
