@@ -92,20 +92,6 @@ RUN cd /tmp && \
     cd .. && \
     rm --force --recursive /tmp/lua-5.4.6
 
-
-# Install VS Code extensions
-RUN npm install --global @vscode/vsce yarn && \
-    mkdir --parents /opt/cs50/extensions && \
-    cd /tmp && \
-    git clone https://github.com/cs50/style50.vsix.git && \
-    cd style50.vsix && \
-    npm install && \
-    vsce package && \
-    mv style50-0.0.1.vsix /opt/cs50/extensions && \
-    cd /tmp && \
-    rm --force --recursive style50.vsix && \
-    npm uninstall --global vsce yarn
-
 # Final stage
 #FROM cs50/cli:latest
 
