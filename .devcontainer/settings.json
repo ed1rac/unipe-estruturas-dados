@@ -1,6 +1,7 @@
 {            
                 "editor.fontFamily": "CaskaydiaCove, 'Ubuntu Mono', CascadiaCode, 'Cascadia Code', Consolas, 'Courier New', monospace",
                 "C_Cpp.updateChannel": "Insiders",
+                "terminal.integrated.shell.linux": "/bin/bash",
                 "workbench.colorTheme": "Dracula",
                 "latex-workshop.message.update.show": false,
                 "[latex]": {
@@ -212,7 +213,9 @@
                             "target": "/var/run/docker-host.sock", /* https://github.com/devcontainers/features/blob/main/src/docker-outside-of-docker/devcontainer-feature.json */
                             "type": "bind"
                         }
-                    ]
+                    ],
+                    // Command to be executed after the container is created.
+	                "postCreateCommand": ".devcontainer/post-create.sh"
 
                     
         }

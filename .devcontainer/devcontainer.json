@@ -41,7 +41,7 @@
                 "HTMLHint.vscode-htmlhint",
                 "Miglisoft.phpformbuilder",
                 "monokai.theme-monokai-pro-vscode",
-                "ms-dotnettools.vscode-dotnet-runtime",                                
+                "ms-dotnettools.vscode-dotnet-runtime",
                 "ms-vscode-remote.remote-wsl",
                 "ms-vscode.makefile-tools",
                 "RandomFractalsInc.geo-data-viewer",
@@ -55,8 +55,11 @@
                 "codespaces-contrib.codeswing",
                 "vsls-contrib.codetour",
                 "marp-team.marp-vscode",
-                "bmewburn.vscode-intelephense-client"
+                "bmewburn.vscode-intelephense-client",
+                "ms-vscode.cpptools-extension-pack"
             ]
+        }, "settings":{
+            "postCreateCommand": ".devcontainer/post-create.sh"        
         }
     }
 }
