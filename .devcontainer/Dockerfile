@@ -191,5 +191,6 @@ RUN mv /instala-config-ed.sh /home/vscode
 RUN cd /home/vscode
 RUN bash /home/vscode/instala-config-ed.sh
 RUN cp /home/vscode/.bashrc /home/unipe -r -f -v
+RUN cd /workspaces/unipe-estruturas-dados/c/estruturasdados
 
 USER vscode
