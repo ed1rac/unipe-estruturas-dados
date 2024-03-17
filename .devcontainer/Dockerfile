@@ -174,7 +174,8 @@ RUN touch instala-config-ed.sh && \
     ./instala-config-ed.sh && \
     touch config_bash_oh_my_posh.sh && \
     curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
-    chmod +x config_bash_oh_my_posh.sh
+    chmod +x config_bash_oh_my_posh.sh && \
+    ./configura_bash_oh_my_posh.sh
 
 # Copy files to image
 #COPY ./etc /etc
