@@ -81,18 +81,6 @@ RUN apt-get install -y locate
 RUN apt-get install -y tree
 RUN updatedb
 
-# Install glibc sources for debugger
-# https://github.com/Microsoft/vscode-cpptools/issues/1123#issuecomment-335867997
- RUN echo "deb-src http://archive.ubuntu.com/ubuntu/ jammy main restricted" > /etc/apt/sources.list.d/_.list && \
-    apt update && \
-    apt install --no-install-recommends --no-install-suggests --yes \
-        dpkg-dev && \
-    cd /tmp && \
-    apt source glibc && \
-    rm --force --recursive *.dsc *.tar.* && \
-    mkdir --parents /build/glibc-sMfBJT && \
-    tar --create --gzip --file /build/glibc-sMfBJT/glibc.tar.gz glibc*
-
 # Install Lua 5.x
 # https://www.lua.org/manual/5.4/readme.html
 RUN cd /tmp && \
