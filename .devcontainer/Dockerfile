@@ -164,13 +164,13 @@ RUN echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc
 RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
 
 # instala algumas configuracoes.
-#RUN touch instala-config-ed.sh && \
-#    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
-#    chmod +x instala-config-ed.sh && \
-#    ./instala-config-ed.sh && \
-#    touch config_bash_oh_my_posh.sh && \
-#    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
-#    chmod +x config_bash_oh_my_posh.sh
+RUN touch instala-config-ed.sh && \
+    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
+    chmod +x instala-config-ed.sh && \
+    ./instala-config-ed.sh && \
+    touch config_bash_oh_my_posh.sh && \
+    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
+    chmod +x config_bash_oh_my_posh.sh
 
 
 # Copy files to image
@@ -183,4 +183,5 @@ RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
 RUN useradd -m unipe
 # Define a senha do usuário 'unipe' como 'unipe'
 RUN echo "unipe:unipe" | chpasswd
-USER unipe
+
+USER vscode
