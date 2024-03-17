@@ -56,7 +56,8 @@
                 "vsls-contrib.codetour",
                 "marp-team.marp-vscode",
                 "bmewburn.vscode-intelephense-client",
-                "ms-vscode.cpptools-extension-pack"
+                "ms-vscode.cpptools-extension-pack",
+                "danielpinto8zz6.c-cpp-compile-run"
             ]
         }, "settings":{
             "postCreateCommand": ".devcontainer/post-create.sh"        
