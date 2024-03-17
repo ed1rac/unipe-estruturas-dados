@@ -58,7 +58,8 @@
                 "bmewburn.vscode-intelephense-client",
                 "ms-vscode.cpptools-extension-pack",
                 "danielpinto8zz6.c-cpp-compile-run",
-                "dracula-theme.theme-dracula"
+                "dracula-theme.theme-dracula",
+                "Equinusocio.vsc-material-theme"
             ]
         }, "settings":{
             "postCreateCommand": ".devcontainer/post-create.sh"        
