@@ -187,6 +187,10 @@ RUN useradd -m unipe
 # Define a senha do usuário 'unipe' como 'unipe'
 RUN echo "unipe:unipe" | chpasswd
 
-CMD ["mv /instala-config-ed.sh /home/vscode && cd /home/vscode && bash /home/vscode/instala-config-ed.sh && cp /home/vscode/.bashrc /home/unipe -r -f -v && cd /workspaces/unipe-estruturas-dados/c/estruturasdados"]
+RUN mv /instala-config-ed.sh /home/vscode && \
+    cd /home/vscode && \
+    bash /home/vscode/instala-config-ed.sh && \
+    cp /home/vscode/.bashrc /home/unipe -r -f -v
+CMD ["cd", "/workspaces/unipe-estruturas-dados/c/estruturasdados"]
 
 USER vscode
