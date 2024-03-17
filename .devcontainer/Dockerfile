@@ -18,6 +18,7 @@ RUN apt-get update --fix-missing && apt-get -y upgrade
 RUN apt-get install -y --no-install-recommends \
     apt-utils \
     curl \
+    clang \
     cmake \
     build-essential \
     gcc \
@@ -172,7 +173,6 @@ RUN touch instala-config-ed.sh && \
     curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
     chmod +x config_bash_oh_my_posh.sh
 
-
 # Copy files to image
 #COPY ./etc /etc
 #COPY ./opt /opt
@@ -183,5 +183,10 @@ RUN touch instala-config-ed.sh && \
 RUN useradd -m unipe
 # Define a senha do usuário 'unipe' como 'unipe'
 RUN echo "unipe:unipe" | chpasswd
+
+RUN mv /instala-config-ed.sh /home/vscode
+RUN cd /home/vscode
+RUN ./instala-config-ed.sh
+RUN cp /home/vscode/.bashrc /home/unipe -r -f -v
 
 USER vscode
