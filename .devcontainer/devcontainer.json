@@ -1,0 +1,62 @@
+{
+    "build": {
+        "args": {
+            "TAG": "${localEnv:TAG}",
+            "VCS_REF": "${localEnv:VCS_REF}"
+        },
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode":{
+        "extensions": 
+            [
+                "mathematic.vscode-pdf",
+                "ms-azuretools.vscode-docker",
+                "ms-ceintl.vscode-language-pack-es",
+                "ms-ceintl.vscode-language-pack-fr",
+                "ms-ceintl.vscode-language-pack-ja",
+                "ms-ceintl.vscode-language-pack-ko",
+                "ms-ceintl.vscode-language-pack-pl",
+                "ms-ceintl.vscode-language-pack-pt-br",
+                "ms-python.autopep8",
+                "ms-python.python",
+                "ms-vscode.cpptools",
+                "ms-vscode.hexeditor",
+                "ms-vsliveshare.vsliveshare",
+                "vsls-contrib.gitdoc",
+                "BhargavDetroja.export-your-extensions",
+                "bierner.emojisense",
+                "cweijan.vscode-office",
+                "dbaeumer.vscode-eslint",
+                "docsmsft.docs-markdown",
+                "ecmel.vscode-html-css",
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode",
+                "mechatroner.rainbow-csv",
+                "formulahendry.code-runner",
+                "formulahendry.auto-close-tag",
+                "Futureglobe.sepaswitch",
+                "GrapeCity.gc-excelviewer",
+                "HTMLHint.vscode-htmlhint",
+                "Miglisoft.phpformbuilder",
+                "monokai.theme-monokai-pro-vscode",
+                "ms-dotnettools.vscode-dotnet-runtime",                                
+                "ms-vscode-remote.remote-wsl",
+                "ms-vscode.makefile-tools",
+                "RandomFractalsInc.geo-data-viewer",
+                "RandomFractalsInc.vscode-data-preview",
+                "ritwickdey.LiveServer",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+                "Zignd.html-css-class-completion",
+                "blackgirlbytes.deploy-to-github-pages",
+                "tinkertrain.theme-panda",
+                "codespaces-contrib.codeswing",
+                "vsls-contrib.codetour",
+                "marp-team.marp-vscode",
+                "bmewburn.vscode-intelephense-client"
+            ]
+        }
+    }
+}
