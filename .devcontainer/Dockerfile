@@ -142,12 +142,7 @@ RUN touch instala-config-cs50.sh && \
     curl -s https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/script.deb.sh > instala-config-cs50.sh && \ 
     chmod +x instala-config-cs50.sh && \
     ./instala-config-cs50.sh && \
-    curl -s https://ohmyposh.dev/install.sh | bash -s && \
     apt install libcs50
-RUN /usr/local/bin/oh-my-posh font install 3270
-RUN /usr/local/bin/oh-my-posh font install CascadiaCode
-RUN /usr/local/bin/oh-my-posh font install Arimo
-RUN /usr/local/bin/oh-my-posh font install DroidSansMono
 
 
 #RUN echo "eval \"$(/usr/local/bin/oh-my-posh init bash --config ~/themes/amro.omp.json)\"" >> ~/.bashrc
