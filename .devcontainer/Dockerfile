@@ -183,7 +183,7 @@ RUN git clone https://github.com/ed1rac/FerramentasProgramacao.git
 RUN cp FerramentasProgramacao/ /home/vscode/ -r -v -f
 RUN cd FerramentasProgramacao
 #RUN dos2unix instala-config-codespace.sh 
-RUN bash instala-config-codespace.sh
+RUN bash /workspaces/unipe-estruturas-dados/FerramentasProgramacao/instala-config-codespace.sh
 #/home/codespace/.cache/oh-my-posh/themes
 #RUN curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /home/vscode
 #Installing oh-my-posh for linux-amd64 in /home/vscode
