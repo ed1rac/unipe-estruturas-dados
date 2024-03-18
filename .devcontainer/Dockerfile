@@ -166,16 +166,33 @@ RUN echo "export LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc
 RUN echo "export C_INCLUDE_PATH=/usr/local/include" >> ~/.bashrc
 RUN echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc
 RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
+RUN export "PATH=$PATH:/home/vscode"
+
 
 # instala algumas configuracoes.
-RUN touch instala-config-ed.sh && \
-    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
-    chmod +x instala-config-ed.sh && \
-    ./instala-config-ed.sh && \
-    touch config_bash_oh_my_posh.sh && \
-    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
-    chmod +x config_bash_oh_my_posh.sh 
-    #./configura_bash_oh_my_posh.sh
+#RUN touch instala-config-ed.sh && \
+#    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
+#    chmod +x instala-config-ed.sh && \
+#    ./instala-config-ed.sh && \
+#    touch config_bash_oh_my_posh.sh && \
+#    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/configura_bash_oh_my_posh.sh > config_bash_oh_my_posh.sh && \
+#    chmod +x config_bash_oh_my_posh.sh 
+#    #./configura_bash_oh_my_posh.shell
+
+RUN git clone https://github.com/ed1rac/FerramentasProgramacao.git
+RUN cp FerramentasProgramacao/ /home/vscode/ -r -v -f
+RUN cd FerramentasProgramacao
+#RUN dos2unix instala-config-codespace.sh 
+RUN bash instala-config-codespace.sh
+#/home/codespace/.cache/oh-my-posh/themes
+#RUN curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /home/vscode
+#Installing oh-my-posh for linux-amd64 in /home/vscode
+#Downloading oh-my-posh from https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64
+#Installing oh-my-posh themes in /root/themes
+#oh-my-posh init bash --config /root/themes/amro.omp.json
+##eval "$(oh-my-posh init bash --config /root/themes/amro.omp.json)"
+RUN cp /root/.bashrc /home/vscode
+
 
 # Copy files to image
 #COPY ./etc /etc
