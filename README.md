@@ -18,9 +18,10 @@ Este repositório Codespaces fornece um ambiente de desenvolvimento pré-configu
 - pip
 - entre outros recursos ...
 
-## Instruções do Terminal
-**Programação I**
+## Programação
 Template para as disciplinas de Programação do [Professor Ed](https://edkallenn.github.io/)  do Centro Universitário Unipê de João Pessoa - Paraíba.
+
+## Instruções do Terminal
 **Comandos do terminal**
 
 | Comando | Descrição |
