@@ -47,7 +47,7 @@ Este projeto é desenvolvido com dedicação e carinho à disseminação do conh
 
 - 🇧🇷 **PIX (Brasil — Qualquer valor, taxa zero)**:
   - **Chave PIX (E-mail)**: `edkevan@gmail.com`
-  - **Titular**: Edkallenn
+  - **Titular**: Edkallenn Silva de Lima
 
 Muito obrigado pelo apoio! 🚀
 
