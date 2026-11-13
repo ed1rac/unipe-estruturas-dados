@@ -1,13 +1,12 @@
 # 📚 Unipê — Laboratório de Estruturas de Dados
 
 <div align="center">
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ed1rac/unipe-estruturas-dados)
-[![C](https://img.shields.io/badge/Linguagem-C99_%2F_C11-00599C?logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Valgrind](https://img.shields.io/badge/Auditoria-Valgrind_Memory-red.svg)](https://valgrind.org/)
-
-**Repositório de laboratório prático para as aulas de Estruturas de Dados do Centro Universitário de João Pessoa (Unipê).**
-
+  <p>
+    <a href="https://codespaces.new/ed1rac/unipe-estruturas-dados"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
+    <a href="https://en.wikipedia.org/wiki/C_(programming_language"><img src="https://img.shields.io/badge/Linguagem-C99_%2F_C11-00599C?logo=c" alt="C"></a>
+    <a href="https://valgrind.org/"><img src="https://img.shields.io/badge/Auditoria-Valgrind_Memory-red.svg" alt="Valgrind"></a>
+  </p>
+  <p><strong>Repositório de laboratório prático para as aulas de Estruturas de Dados do Centro Universitário de João Pessoa (Unipê).</strong></p>
 </div>
 
 ---
