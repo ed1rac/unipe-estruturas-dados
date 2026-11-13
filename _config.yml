@@ -1,0 +1,5 @@
+theme: jekyll-theme-architect
+title: "🏛️ Unipê — Laboratório de Estruturas de Dados"
+description: "Laboratório prático de C99/C11, ponteiros, gerenciamento de memória com Valgrind e TADs."
+kramdown:
+  parse_block_html: true
